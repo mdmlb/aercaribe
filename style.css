@@ -322,6 +322,9 @@ footer {
 }
 }
 @media (max-width: 410px) {
+    .logo img{
+        width: 100px;
+    }
     .footer-main {
         align-items: flex-start;
     }
