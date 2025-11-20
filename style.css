@@ -1,6 +1,6 @@
 /* Background for first servicio-card (Cargo) */
 .servicio-card-cargo {
-    background: linear-gradient(180deg, #a13e8a99 0%, #8d1a5b99 100%), url('/Resources/logo.webp') center center/cover no-repeat;
+    background: linear-gradient(180deg, #a13e8a99 0%, #8d1a5b99 100%), url('./Resources/logo.webp') center center/cover no-repeat;
     background-blend-mode: multiply;
     color: #fff;
 }
@@ -144,7 +144,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/Resources/aercaribe-cargo-plane.webp') center center/cover no-repeat;
+    background: url('./Resources/aercaribe-cargo-plane.webp') center center/cover no-repeat;
     z-index: 1;
 }
 .hero-content {
@@ -226,14 +226,14 @@ main {
     margin-bottom: 18px;
 }
 .servicio-card-cargo{
-    background: url('/Resources/Servicio-card\ 1.webp') center center/cover no-repeat;
+    background: url('./Resources/Servicio-card\ 1.webp') center center/cover no-repeat;
 }
 
 .servicio-card-charter{
-    background: url('/Resources/Servicio-card\ 2.webp') center center/cover no-repeat;
+    background: url('./Resources/Servicio-card\ 2.webp') center center/cover no-repeat;
 }
 .servicio-card-flotas{
-    background: url('/Resources/Servicio-card\ 3.webp') center center/cover no-repeat;
+    background: url('./Resources/Servicio-card\ 3.webp') center center/cover no-repeat;
 }
 .servicio-card h3 {
     font-size: 1.3rem;
@@ -246,7 +246,7 @@ main {
 }
 
 .contacto {
-    background: url('/Resources/Formulario.webp') center center/cover no-repeat;
+    background: url('./Resources/Formulario.webp') center center/cover no-repeat;
     color: #fff;
     padding: 48px 5vw 48px 5vw;
     text-align: center;
