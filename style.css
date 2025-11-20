@@ -48,7 +48,7 @@ header {
 }
 .logo img {
     height: auto;
-    width: 100px;
+    width: 150px;
 }
 .navbar nav ul {
     display: flex;
@@ -427,13 +427,6 @@ footer {
     }
 }
 @media (max-width: 600px) {
-    .navbar {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 12px 3vw 0 3vw;
-    }
     .navbar nav ul {
         flex-direction: column;
         gap: 8px;
