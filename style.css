@@ -1,0 +1,478 @@
+/* Background for first servicio-card (Cargo) */
+.servicio-card-cargo {
+    background: linear-gradient(180deg, #a13e8a99 0%, #8d1a5b99 100%), url('/Resources/logo.webp') center center/cover no-repeat;
+    background-blend-mode: multiply;
+    color: #fff;
+}
+@media (max-width: 700px) {
+    .servicio-card {
+        flex-direction: column;
+    }
+}
+@media (max-width: 420px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .hero-content{
+        padding: 0 10em;
+    }
+}
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #fff;
+    color: #2d0036;
+    line-height: 1.5;
+}
+
+header {
+    background: #7F0039;
+    color: #fff;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    background: transparent;
+    position: relative;
+}
+.logo img {
+    height: auto;
+    width: 100px;
+}
+.navbar nav ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    list-style: none;
+    transition: none;
+    max-height: none;
+    overflow: visible;
+}
+/* Mobile menu styles */
+@media (max-width: 800px) {
+    .navbar nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        background: #7F0039;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        padding: 0 0;
+        box-shadow: 0 8px 24px #a13e8a22;
+        z-index: 1001;
+        transition: opacity 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+    .navbar nav ul.open {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        padding: 1em 0;
+    }
+    .navbar nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0.7em 2em;
+    }
+    .navbar .menu-toggle {
+        display: block;
+        background: #7F0039;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 0.6em 1.5em;
+        font-size: 1.1em;
+        font-weight: 700;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 0;
+        z-index: 1002;
+    }
+}
+
+@media (min-width: 801px) {
+    .navbar .menu-toggle {
+        display: none;
+    }
+}
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.navbar nav ul li a:hover {
+    color: #ffe600;
+}
+.pse-logo img {
+    height: 7vh;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/Resources/aercaribe-cargo-plane.webp') center center/cover no-repeat;
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: right;
+    max-width: 700px;
+    padding: 0 2em;
+
+}
+.hero-sub {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    background: #7F0039;
+    display: inline-block;
+    padding: 0.2em 0.7em;
+    border-radius: 8px;
+    margin-bottom: 0.3em;
+}
+.hero-desc {
+    font-size: 1rem;
+    margin-bottom: 1.2em;
+}
+.btn-main {
+    background: #F0CC42;
+    color: #7F0039;
+    border: none;
+    border-radius: 30px;
+    padding: 0.7em 2.2em;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn-main:hover {
+    background: #7F0039;
+    color: #fff;
+}
+
+main {
+    background: #fff;
+}
+.servicios {
+    padding: 48px 5vw 32px 5vw;
+    text-align: center;
+}
+.servicios h2 {
+    color: #7F0039;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+.servicios-cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.servicio-card {
+    background: linear-gradient(180deg, #a13e8a99 0%, #8d1a5b99 100%);
+    color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 24px #a13e8a22;
+    padding: 32px 22px;
+    width: 320px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-bottom: 18px;
+}
+.servicio-card-cargo{
+    background: url('/Resources/Servicio-card\ 1.webp') center center/cover no-repeat;
+}
+
+.servicio-card-charter{
+    background: url('/Resources/Servicio-card\ 2.webp') center center/cover no-repeat;
+}
+.servicio-card-flotas{
+    background: url('/Resources/Servicio-card\ 3.webp') center center/cover no-repeat;
+}
+.servicio-card h3 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 0.7em;
+}
+.servicio-card p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contacto {
+    background: url('/Resources/Formulario.webp') center center/cover no-repeat;
+    color: #fff;
+    padding: 48px 5vw 48px 5vw;
+    text-align: center;
+}
+.contacto h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.2em;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff;
+    color: #2d0036;
+}
+.contact-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+.contact-form button {
+    align-self: center;
+    margin-top: 18px;
+    align-self: center;
+    margin-top: 18px;
+    color: #7F0039;
+}
+footer {
+    background: #7F0039;
+    color: #fff;
+    padding: 0;
+}
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    flex-wrap: nowrap;
+    padding: 36px 5vw 24px 5vw;
+}
+@media (max-width: 420px) {
+    .footer-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .hero-content h1 {
+    font-size: 1.2rem;
+}
+}
+@media (max-width: 410px) {
+    .footer-main {
+        align-items: flex-start;
+    }
+}
+.footer-logo img {
+    height: 8vh;
+    margin-bottom: 0;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.footer-links ul li a:hover {
+    color: #ffe600;
+}
+.footer-contact h4 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+.footer-contact ul li {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.footer-social {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 12px;
+}
+.footer-social img {
+    height: 32px;
+    width: 32px;
+}
+.footer-newsletter p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+.footer-newsletter form {
+    display: flex;
+    gap: 8px;
+}
+.footer-newsletter input[type="email"] {
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+.footer-newsletter button {
+    background: #F0CC42;
+    color: #a13e8a;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 1rem;
+     justify-content: space-between;
+     gap: 4em;
+}
+.footer-newsletter button:hover {
+    background: #a13e8a;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .navbar nav ul {
+        gap: 12px;
+        font-size: 0.95rem;
+    }
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    .servicios-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 3vw 0 3vw;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 8px;
+    }
+    .ose-logo {
+        align-self: flex-end;
+    }
+    .hero {
+        padding: 1em;
+    }
+    .hero-content {
+        margin-right: 0;
+        text-align: center;
+        max-width: 95vw;
+    }
+
+    .servicios {
+        padding: 32px 3vw 18px 3vw;
+    }
+    .servicio-card {
+        width: 95vw;
+        min-width: unset;
+        padding: 18px 8px;
+    }
+    .contacto {
+        padding: 32px 3vw 32px 3vw;
+    }
+    .contact-form {
+        max-width: 98vw;
+    }
+    .footer-main {
+        padding: 24px 3vw 16px 3vw;
+    }
+    .footer-logo img {
+        height: 38px;
+    }
+    .footer-social img {
+        height: 26px;
+        width: 26px;
+    }
+}

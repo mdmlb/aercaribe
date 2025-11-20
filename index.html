@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AerCaribe Cargo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.webp" alt="AerCaribe Cargo Logo">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú" onclick="document.querySelector('.navbar nav ul').classList.toggle('open')">Menu</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Grupo AERCARIBE</a></li>
+                    <li><a href="#">Cargo</a></li>
+                    <li><a href="#">Vuelos Charter</a></li>
+                    <li><a href="#">Rutas y frecuencias</a></li>
+                    <li><a href="#">Flotes</a></li>
+                    <li><a href="#">PQRS</a></li>
+                </ul>
+            </nav>
+            <div class="pse-logo">
+                <img src="pse-logo.webp" alt="OSE Logo">
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <p class="hero-sub">Contamos con una amplia</p>
+                <h1>frecuencia de vuelos para tu carga</h1>
+                <p class="hero-desc">Transporte aéreo ágil, puntual y confiable</p>
+                <a href="#" class="btn-main">Conoce más</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="servicios">
+            <h2>Nuestros servicios</h2>
+            <div class="servicios-cards">
+                <div class="servicio-card servicio-card-cargo">
+                    <h3>Cargo</h3>
+                    <p>Podemos manejar cualquier desafío logístico, asegurando que tu mercancía llegue a su destino de manera rápida, segura y con el tratamiento especializado que requieres.</p>
+                </div>
+                <div class="servicio-card servicio-card-charter">
+                    <h3>Vuelos Charter</h3>
+                    <p>Ya sea que seas una persona natural, entidad gubernamental o empresa, ahora puedes alquilar un avión para vivir una experiencia de vuelos a medida.</p>
+                </div>
+                <div class="servicio-card servicio-card-flotas">
+                    <h3>Flotas</h3>
+                    <p>Ahora tienes la posibilidad de rentar una parte o comprar y diseñar una experiencia de vuelo a la medida. Desde itinerarios personalizados hasta configuraciones de cabina especializadas, el cielo ya no es un límite, sino tu pista de despegue personal.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <form class="contact-form">
+                <label>Correo electrónico*<input type="email" placeholder="correo@gmail.com" required></label>
+                <label>Nombre*<input type="text" placeholder="Nombre" required></label>
+                <label>Apellido*<input type="text" placeholder="Apellido" required></label>
+                <label>Teléfono*<input type="tel" placeholder="Apellido" required></label>
+                <label>País
+                    <select required>
+                        <option value="">Seleccionar país</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="peru">Perú</option>
+                        <option value="ecuador">Ecuador</option>
+                        <!-- ...otros países... -->
+                    </select>
+                </label>
+                <label>Tipo de solicitud*
+                    <select required>
+                        <option value="">Seleccionar tipo de solicitud</option>
+                        <option value="info">Información</option>
+                        <option value="cotizacion">Cotización</option>
+                        <option value="soporte">Soporte</option>
+                    </select>
+                </label>
+                <label>Asunto o Título*<input type="text" placeholder="Apellido" required></label>
+                <label>Descripción detallada*<textarea placeholder="Escribir aquí" required></textarea></label>
+                <button type="submit" class="btn-main">Conoce más</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="logo.webp" alt="AerCaribe Cargo Logo">
+                <div class="footer-social">
+                    <a href="#"><img src="Facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="Instagram.webp" alt="Instagram"></a>
+                    <a href="#"><img src="Linkedin.webp" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Queremos ser proveedor</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Información de contacto</h4>
+                <ul>
+                    <li><span>📞</span> (571) 121-9547</li>
+                    <li><span>📱</span> 321 314 9722</li>
+                    <li><span>✉️</span> aeroc8@gmail.com</li>
+                    <li><span>📍</span> Av. El Dorado # 103 - 08, Entrada 1 - Interior 117</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
